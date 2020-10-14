@@ -1,9 +1,20 @@
 //Code Quiz
+
+//VARIABLE DECLARATION
 var correctAnswer;
 var incorrectAnswer;
 var timer = 200;
 
-//Function to display new quesitons after a set amount of time
-//Function to have eventlistener when a correct answer is chosen
-//Function to have eventListener when inccorect answer is chosen and reduce total time
-//Function to save intials and score
+var questions = [
+  "QuestionOne",
+  "QuestionTwo",
+  "QuestionThree",
+  "QuestionFour",
+  "QuestionFive",
+];
+
+//List of questions and variable to hold all the questions
+//logic for deciding on the right answer
+//eventhandler when a user clicks the button
+
+//FUNCTIONS
