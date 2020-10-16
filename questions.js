@@ -19,7 +19,7 @@ var questionTwo = {
     c: "red",
     d: "yellow",
   },
-  answer: "alert",
+  answer: "blue",
 };
 
 var questionThree = {
