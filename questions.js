@@ -11,19 +11,19 @@ var questionOne = {
 };
 
 var questionTwo = {
-  id: 1,
-  question: "Common datatypes do not include?",
+  id: 2,
+  question: "What is my favorite color?",
   choices: {
-    a: "string",
-    b: "boolean",
-    c: "alert",
-    d: "number",
+    a: "green",
+    b: "blue",
+    c: "red",
+    d: "yellow",
   },
   answer: "alert",
 };
 
 var questionThree = {
-  id: 1,
+  id: 3,
   question: "Common datatypes do not include?",
   choices: {
     a: "string",
@@ -35,7 +35,7 @@ var questionThree = {
 };
 
 var questionFour = {
-  id: 1,
+  id: 4,
   question: "Common datatypes do not include?",
   choices: {
     a: "string",
@@ -47,7 +47,7 @@ var questionFour = {
 };
 
 var questionFive = {
-  id: 1,
+  id: 5,
   question: "Common datatypes do not include?",
   choices: {
     a: "string",
@@ -59,7 +59,7 @@ var questionFive = {
 };
 
 var questionSix = {
-  id: 1,
+  id: 6,
   question: "Common datatypes do not include?",
   choices: {
     a: "string",
@@ -71,7 +71,7 @@ var questionSix = {
 };
 
 var questionSeven = {
-  id: 1,
+  id: 7,
   question: "Common datatypes do not include?",
   choices: {
     a: "string",
@@ -83,7 +83,7 @@ var questionSeven = {
 };
 
 var questionEight = {
-  id: 1,
+  id: 8,
   question: "Common datatypes do not include?",
   choices: {
     a: "string",
@@ -95,7 +95,7 @@ var questionEight = {
 };
 
 var questionNine = {
-  id: 1,
+  id: 9,
   question: "Common datatypes do not include?",
   choices: {
     a: "string",
@@ -107,7 +107,7 @@ var questionNine = {
 };
 
 var questionTen = {
-  id: 1,
+  id: 10,
   question: "Common datatypes do not include?",
   choices: {
     a: "string",

@@ -2,31 +2,30 @@
 
 //VARIABLE DECLARATION
 var timer = document.querySelector("#navbarNav");
+var highScore = document.querySelector("#highScore");
 var question = document.querySelector("#quizQuestion");
 var answerOne = document.querySelector("#answer-1");
 var answerTwo = document.querySelector("#answer-2");
 var answerThree = document.querySelector("#answwer-3");
 var answerFour = document.querySelector("#answer-4");
 
-
-
-var questions = [
-  "QuestionOne",
-  "QuestionTwo",
-  "QuestionThree",
-  "QuestionFour",
-  "QuestionFive",
+var questionList = [
+  "questionOne",
+  "questionTwo",
+  "questionThree",
+  "questionFour",
+  "questionFive",
+  "questionSix",
+  "questionSeven",
+  "questionEight",
+  "questionNine",
+  "questionTen",
 ];
-
-//List of questions and variable to hold all the questions
-//logic for deciding on the right answer
-//eventhandler when a user clicks the button
-//
 
 //FUNCTIONS
 
 function startQuestion() {
-  var currentQuesiton = questions[currentQuestionsIndex];
+  var currentQuesiton = questionList[currentQuestionsIndex];
   questions.textcontent = currentQuesiton.title
   choices.innterHTML = ""
 }
