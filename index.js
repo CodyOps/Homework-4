@@ -101,6 +101,8 @@ function askQuestion() {
     answers.appendChild(btn);
   }
 
+  var selectedAnswer = answers.addEventListener("click", function () {});
+
   //for loop for buttons
   // choices.innterHTML = "";
   //   <button
