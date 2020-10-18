@@ -6,6 +6,7 @@ var highScore = document.querySelector("#highScore");
 var question = document.querySelector("#questionTitle");
 var answers = document.querySelector("#questionChoices");
 var currentQuestionsIndex = 0;
+var secondsLeft = 120;
 
 var questionList = [
   {
@@ -97,25 +98,31 @@ function askQuestion() {
     var btn = document.createElement("button");
     btn.setAttribute("type", "button");
     btn.setAttribute("class", "btn btn-primary btn-lg btn-block");
+    btn.setAttribute("value", currentQuestion.choices);
     btn.textContent = currentQuestion.choices[i];
     answers.appendChild(btn);
   }
-
-  var selectedAnswer = answers.addEventListener("click", function () {});
-
-  //for loop for buttons
-  // choices.innterHTML = "";
-  //   <button
-  //   type="button"
-  //   class="btn btn-primary btn-lg btn-block"
-  //   id="answer-1"
-  // >
-
-  // </button>
 }
 
 function startQuiz() {
   askQuestion();
+  var selectedAnswer = answers.addEventListener("click", function () {
+    if (selectedAnswer.value === answer.value) {
+      currentQuestionsIndex++;
+    } else {
+      timer - 15;
+      currentQuestionsIndex++;
+    }
+  });
+
+  function setTimer() {
+    var timeLeft = setInterval(function () {
+      secondsLeft--;
+      timer, (textContent = secondsLeft);
+    });
+  }
+
+  setTimer();
 }
 
 //Entry Point
