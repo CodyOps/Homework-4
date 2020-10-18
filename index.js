@@ -93,6 +93,7 @@ var questionList = [
 function askQuestion() {
   var currentQuestion = questionList[currentQuestionsIndex];
   question.textContent = currentQuestion.question;
+  answers.innerHTML = "";
 
   for (var i = 0; i < 4; i++) {
     var btn = document.createElement("button");
@@ -101,19 +102,24 @@ function askQuestion() {
     btn.setAttribute("value", currentQuestion.choices);
     btn.textContent = currentQuestion.choices[i];
     answers.appendChild(btn);
+
+    btn.addEventListener("click", function (event) {
+      console.log(event.target);
+      let selectedAnswer = event.target.value;
+      console.log(selectedAnswer);
+      if (selectedAnswer === questionList.answer) {
+        currentQuestionsIndex++;
+      } else {
+        timer - 15;
+        currentQuestionsIndex++;
+      }
+    });
+    askQuestion();
   }
 }
 
 function startQuiz() {
   askQuestion();
-  var selectedAnswer = btn.addEventListener("click", function () {
-    if (selectedAnswer.value === questionList.answer.value) {
-      currentQuestionsIndex++;
-    } else {
-      timer - 15;
-      currentQuestionsIndex++;
-    }
-  });
 
   function setTimer() {
     var timeLeft = setInterval(function () {
@@ -132,13 +138,3 @@ function startQuiz() {
 
 //Entry Point
 startQuiz();
-// choices.foreach(functions (choice, i)) {
-//   var choiceBtn = document.createElement("button");
-//   choiceBtn.setAttribute("class", "choice");
-//   choiceBtn.setAttribute()
-//   choiceBtn.textcontent = i + 1 "." choices
-// }
-
-//create a function that will run on click what the use clicked with event object -
-//what the current question is and is what is click equal to the correct answer
-//If yes what next and if wrong then got next
