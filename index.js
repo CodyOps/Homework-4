@@ -142,4 +142,15 @@ function startQuiz() {
 }
 
 //Entry Point
-startQuiz();
+
+function homePage() {
+  var startbtn = document.createElement("button");
+  startbtn.textContent = "Click here to start the quiz!"
+  document.body.appendChild(startbtn);
+
+  document.getElementById("button").addEventListener("click", startQuiz) {
+    startQuiz()
+  };
+}
+
+homePage();
