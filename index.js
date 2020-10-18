@@ -7,6 +7,7 @@ var question = document.querySelector("#questionTitle");
 var answers = document.querySelector("#questionChoices");
 var currentQuestionsIndex = 0;
 var secondsLeft = 120;
+var Score = document.querySelector("#score");
 
 var questionList = [
   {
@@ -108,7 +109,10 @@ function askQuestion() {
       let selectedAnswer = event.target.value;
       console.log(selectedAnswer);
       if (selectedAnswer === questionList.answer) {
-        currentQuestionsIndex++;
+        currentQuestion++;
+        var userScore = 0;
+        userScore.textContent = userScore + 1;
+        document.body.appendChild(userScore);
       } else {
         timer - 15;
         currentQuestionsIndex++;
