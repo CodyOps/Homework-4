@@ -1,7 +1,7 @@
 //Code Quiz
 
 //VARIABLE DECLARATION
-var timer = document.querySelector("#navbarNav");
+var timer = document.querySelector("#timer");
 var highScore = document.querySelector("#highScore");
 var question = document.querySelector("#questionTitle");
 var answers = document.querySelector("#questionChoices");
@@ -118,7 +118,12 @@ function startQuiz() {
   function setTimer() {
     var timeLeft = setInterval(function () {
       secondsLeft--;
-      timer, (textContent = secondsLeft);
+      timer.textContent = secondsLeft;
+
+      if (secondsLeft === 0) {
+        clearInterval(timeLeft);
+      }
+      1000;
     });
   }
 
