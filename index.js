@@ -10,21 +10,27 @@ var currentQuestionsIndex = 0;
 var questionList = [
   {
     id: 1,
-    question: "Common datatypes do not include?",
-    choices: ["string", "boolean", "alert", "number"],
-    answer: "alert",
+    question: "According to Master Yoda, how many Sith are always out there?",
+    choices: ["4", "3", "2", "1"],
+    answer: "2",
   },
   {
     id: 2,
-    question: "What is my favorite color?",
-    choices: ["green", "blue", "red", "yellow"],
-    answer: "blue",
+    question:
+      "What happened to Anakin Skywalker at the battle with Count Dooku",
+    choices: [
+      "He lost his left leg",
+      "He lost his right arm",
+      "He lost his right leg",
+      "He lost",
+    ],
+    answer: "He lost his right arm",
   },
   {
     id: 3,
-    question: "What is my favorite color?",
-    choices: ["green", "blue", "red", "yellow"],
-    answer: "blue",
+    question: "Who killed Jabba?",
+    choices: ["Han Solo", "C-3PO", "Luke Skywalker", "Princess Leia"],
+    answer: "Princess Leia",
   },
   {
     id: 4,
