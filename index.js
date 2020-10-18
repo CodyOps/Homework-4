@@ -106,8 +106,8 @@ function askQuestion() {
 
 function startQuiz() {
   askQuestion();
-  var selectedAnswer = answers.addEventListener("click", function () {
-    if (selectedAnswer.value === answer.value) {
+  var selectedAnswer = btn.addEventListener("click", function () {
+    if (selectedAnswer.value === questionList.answer.value) {
       currentQuestionsIndex++;
     } else {
       timer - 15;
