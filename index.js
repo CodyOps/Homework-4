@@ -100,19 +100,20 @@ function askQuestion() {
     var btn = document.createElement("button");
     btn.setAttribute("type", "button");
     btn.setAttribute("class", "btn btn-primary btn-lg btn-block");
-    btn.setAttribute("value", currentQuestion.choices);
+    btn.setAttribute("value", currentQuestion.choices[i]);
     btn.textContent = currentQuestion.choices[i];
     answers.appendChild(btn);
 
     btn.addEventListener("click", function (event) {
       console.log(event.target);
       let selectedAnswer = event.target.value;
+
       console.log(selectedAnswer);
-      if (selectedAnswer === questionList.answer) {
-        currentQuestion++;
+
+      if (selectedAnswer === questionList[currentQuestionsIndex].answer) {
+        currentQuestionsIndex++;
         var userScore = 0;
-        userScore.textContent = userScore + 1;
-        document.body.appendChild(userScore);
+        Score.textContent = userScore + 1;
       } else {
         timer - 15;
         currentQuestionsIndex++;
