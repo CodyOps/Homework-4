@@ -135,8 +135,7 @@ function startQuiz() {
       if (secondsLeft === 0) {
         clearInterval(timeLeft);
       }
-      1000;
-    });
+    }, 1000);
   }
 
   setTimer();
