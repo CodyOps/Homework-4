@@ -113,8 +113,8 @@ function askQuestion() {
         timer - 15;
         currentQuestionsIndex++;
       }
+      askQuestion();
     });
-    askQuestion();
   }
 }
 
