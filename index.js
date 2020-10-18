@@ -20,14 +20,54 @@ var questionList = [
     choices: ["green", "blue", "red", "yellow"],
     answer: "blue",
   },
-  "questionThree",
-  "questionFour",
-  "questionFive",
-  "questionSix",
-  "questionSeven",
-  "questionEight",
-  "questionNine",
-  "questionTen",
+  {
+    id: 3,
+    question: "What is my favorite color?",
+    choices: ["green", "blue", "red", "yellow"],
+    answer: "blue",
+  },
+  {
+    id: 4,
+    question: "What is my favorite color?",
+    choices: ["green", "blue", "red", "yellow"],
+    answer: "blue",
+  },
+  {
+    id: 5,
+    question: "What is my favorite color?",
+    choices: ["green", "blue", "red", "yellow"],
+    answer: "blue",
+  },
+  {
+    id: 6,
+    question: "What is my favorite color?",
+    choices: ["green", "blue", "red", "yellow"],
+    answer: "blue",
+  },
+  {
+    id: 7,
+    question: "What is my favorite color?",
+    choices: ["green", "blue", "red", "yellow"],
+    answer: "blue",
+  },
+  {
+    id: 8,
+    question: "What is my favorite color?",
+    choices: ["green", "blue", "red", "yellow"],
+    answer: "blue",
+  },
+  {
+    id: 9,
+    question: "What is my favorite color?",
+    choices: ["green", "blue", "red", "yellow"],
+    answer: "blue",
+  },
+  {
+    id: 10,
+    question: "What is my favorite color?",
+    choices: ["green", "blue", "red", "yellow"],
+    answer: "blue",
+  },
 ];
 
 //FUNCTIONS
