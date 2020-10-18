@@ -8,6 +8,7 @@ var answers = document.querySelector("#questionChoices");
 var currentQuestionsIndex = 0;
 var secondsLeft = 120;
 var Score = document.querySelector("#score");
+var count = localStorage.getItem("count");
 
 var questionList = [
   {
@@ -112,8 +113,8 @@ function askQuestion() {
 
       if (selectedAnswer === questionList[currentQuestionsIndex].answer) {
         currentQuestionsIndex++;
-        var userScore = 0;
-        Score.textContent = userScore + 1;
+        count++;
+        Score.textContent = count;
       } else {
         timer - 15;
         currentQuestionsIndex++;
