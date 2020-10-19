@@ -116,7 +116,7 @@ function askQuestion() {
         count++;
         Score.textContent = count;
       } else {
-        timer - 15;
+        secondsLeft = secondsLeft - 15;
         currentQuestionsIndex++;
       }
       askQuestion();
@@ -155,6 +155,7 @@ function homePage() {
   document.body.appendChild(startbtn);
 
   document.getElementById("button").addEventListener("click", function () {
+    startParagraph = document.clea;
     startQuiz();
   });
 }
