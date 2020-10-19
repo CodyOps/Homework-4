@@ -10,6 +10,7 @@ var secondsLeft = 120;
 var Score = document.querySelector("#score");
 var count = localStorage.getItem("count");
 
+//Array of all questions
 var questionList = [
   {
     id: 1,
@@ -92,6 +93,7 @@ var questionList = [
 ];
 
 //FUNCTIONS
+//function the prompt quiz questions and answers
 function askQuestion() {
   var currentQuestion = questionList[currentQuestionsIndex];
   question.textContent = currentQuestion.question;
@@ -111,6 +113,7 @@ function askQuestion() {
 
       console.log(selectedAnswer);
 
+      //Score tracker and timer
       if (selectedAnswer === questionList[currentQuestionsIndex].answer) {
         currentQuestionsIndex++;
         count++;
@@ -128,6 +131,7 @@ function askQuestion() {
   }
 }
 
+//starts questions and timer
 function startQuiz() {
   askQuestion();
 
@@ -149,6 +153,7 @@ function startQuiz() {
 
 //Entry Point
 
+//Home page for start button for quiz
 function homePage() {
   var startParagraph = document.createElement("h3");
   startParagraph.setAttribute("id", "paragraph");
@@ -158,6 +163,7 @@ function homePage() {
   var startbtn = document.createElement("button");
   startbtn.setAttribute("id", "button");
   startbtn.textContent = "Click here to start the quiz!";
+  startbtn.style.display = "center";
   document.body.appendChild(startbtn);
 
   document.getElementById("button").addEventListener("click", function () {
@@ -167,14 +173,19 @@ function homePage() {
   });
 }
 
+//endgame function after quiz is finished to prompt text and textbox for initials
 function endgame() {
   var endgame = document.createElement("h3");
   endgame.setAttribute("id", "endParagraph");
   endgame.setAttribute("type", "text");
-  (endgame.textContent =
-    "Congratulations on completing the quiz! Please enter your initials"),
-    "text";
+  endgame.textContent =
+    "Congratulations on completing the quiz! Please enter your initials";
   document.body.appendChild(endgame);
+
+  var initials = document.createElement("textarea");
+  initials.setAttribute("id", "initial-box");
+
+  document.body.appendChild(initials);
 
   question.style.display = "none";
   answers.style.display = "none";
