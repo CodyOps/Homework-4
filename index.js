@@ -189,5 +189,16 @@ function endgame() {
 
   question.style.display = "none";
   answers.style.display = "none";
+
+  function userScore() {
+    var playerScore = document.createElement("h3");
+    playerScore.textContent = initials.textContent;
+    document.body.appendChild(playerScore);
+  }
+  userScore();
 }
 homePage();
+
+function userScore() {
+  var playerScore = initials.textContent;
+}
