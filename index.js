@@ -199,6 +199,7 @@ function endgame() {
 }
 homePage();
 
+//Function to take users initials and score in a variable to be shown in high scores
 function userScore() {
   var playerScore = initials.textContent;
 }
