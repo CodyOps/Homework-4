@@ -120,6 +120,10 @@ function askQuestion() {
         currentQuestionsIndex++;
       }
       askQuestion();
+
+      if (currentQuestionsIndex === questionList) {
+        endgame();
+      }
     });
   }
 }
@@ -161,4 +165,12 @@ function homePage() {
   });
 }
 
+function endgame() {
+  var endgame = document.createElement("h3");
+  endgame.setAttribute("id", "endParagraph");
+  endgame.setAttribute("type", "text");
+  endgame.textContent =
+    "Congratulations on completing the quiz! Please enter your initials";
+  document.body.appendChild(endgame);
+}
 homePage();
