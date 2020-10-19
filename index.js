@@ -121,7 +121,7 @@ function askQuestion() {
       }
       askQuestion();
 
-      if (currentQuestionsIndex === questionList) {
+      if (currentQuestionsIndex === 9) {
         endgame();
       }
     });
@@ -169,8 +169,9 @@ function endgame() {
   var endgame = document.createElement("h3");
   endgame.setAttribute("id", "endParagraph");
   endgame.setAttribute("type", "text");
-  endgame.textContent =
-    "Congratulations on completing the quiz! Please enter your initials";
+  (endgame.textContent =
+    "Congratulations on completing the quiz! Please enter your initials"),
+    "text";
   document.body.appendChild(endgame);
 }
 homePage();
