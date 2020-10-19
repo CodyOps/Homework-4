@@ -138,6 +138,8 @@ function startQuiz() {
 
       if (secondsLeft === 0) {
         clearInterval(timeLeft);
+      } else if (currentQuestionsIndex === 9) {
+        clearInterval(timeLeft);
       }
     }, 1000);
   }
@@ -173,5 +175,8 @@ function endgame() {
     "Congratulations on completing the quiz! Please enter your initials"),
     "text";
   document.body.appendChild(endgame);
+
+  question.style.display = "none";
+  answers.style.display = "none";
 }
 homePage();
