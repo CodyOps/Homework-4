@@ -114,7 +114,7 @@ function askQuestion() {
       if (selectedAnswer === questionList[currentQuestionsIndex].answer) {
         currentQuestionsIndex++;
         count++;
-        Score.textContent = count;
+        Score.textContent = "Score: " + count;
       } else {
         secondsLeft = secondsLeft - 15;
         currentQuestionsIndex++;
@@ -155,7 +155,8 @@ function homePage() {
   document.body.appendChild(startbtn);
 
   document.getElementById("button").addEventListener("click", function () {
-    startParagraph = document.clea;
+    startParagraph.style.display = "none";
+    startbtn.style.display = "none";
     startQuiz();
   });
 }
