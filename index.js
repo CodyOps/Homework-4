@@ -144,13 +144,19 @@ function startQuiz() {
 //Entry Point
 
 function homePage() {
+  var startParagraph = document.createElement("h3");
+  startParagraph.setAttribute("id", "paragraph");
+  startParagraph.textContent = "Welcome to the Star Wars Quiz!";
+  document.body.appendChild(startParagraph);
+
   var startbtn = document.createElement("button");
-  startbtn.textContent = "Click here to start the quiz!"
+  startbtn.setAttribute("id", "button");
+  startbtn.textContent = "Click here to start the quiz!";
   document.body.appendChild(startbtn);
 
-  document.getElementById("button").addEventListener("click", startQuiz) {
-    startQuiz()
-  };
+  document.getElementById("button").addEventListener("click", function () {
+    startQuiz();
+  });
 }
 
 homePage();
